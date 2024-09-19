@@ -3709,6 +3709,12 @@ img {
 	margin: 0;
 }
 
+/* Style Save button help text */
+.save-shortcut-note {
+    font-size: 12px;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 599px) {
 	.my-sites li {
 		min-height: 0;

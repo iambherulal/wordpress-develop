@@ -351,6 +351,7 @@ else :
 					<?php submit_button( __( 'Update File' ), 'primary', 'submit', false ); ?>
 					<span class="spinner"></span>
 				</p>
+				<p class="save-shortcut-note">Tip: You can also use Ctrl+S (Cmd+S on Mac) to save changes.</p>
 				<?php
 			} else {
 				?>
