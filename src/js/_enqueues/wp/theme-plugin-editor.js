@@ -49,6 +49,14 @@ wp.themePluginEditor = (function( $ ) {
 		component.docsLookUpButton = component.form.find( '#docs-lookup' );
 		component.docsLookUpList = component.form.find( '#docs-list' );
 
+		// Add a listener for Ctrl+S or Cmd+S to save the file.
+		$(document).on('keydown', function(event) {
+			if ((event.ctrlKey || event.metaKey) && event.which === 83) {
+				event.preventDefault(); // Prevent default save dialog
+				component.submitButton.trigger('click');
+			}
+		});
+
 		if ( component.warning.length > 0 ) {
 			component.showWarning();
 		}
